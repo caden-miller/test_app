@@ -1,0 +1,39 @@
+<%= link_to("Back to List", books_path, class: 'back-link') %>
+
+<div class="books show">
+  <h2>Show book</h2>
+
+  <div class="actions">
+    <%= link_to('Edit', edit_book_path(@book)) %>
+    <%= link_to('Delete', delete_book_path(@book)) %>
+  </div>
+
+  <table summary="Book detail view">
+    <tr>
+      <th>Title</th>
+      <td><%= @book.title %></td>
+    </tr>
+      <th>Author</th>
+      <td><%= @book.author %></td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td><%= @book.price %></td>
+    </tr>
+    <tr>
+      <th>Published Date</th>
+      <td><%= @book.published_date %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @book.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @book.updated_at %></td>
+    </tr>
+  </table>
+
+</div>
+
+
