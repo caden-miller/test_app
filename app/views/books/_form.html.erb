@@ -1,0 +1,20 @@
+<table summary="Book form fields">
+    <tr>
+      <th><%= f.label(:title) %></th>
+      <td><%= f.text_field(:title) %></td>
+    </tr>
+    <tr>
+      <th><%= f.label(:author) %></th>
+      <td><%= f.text_field(:author) %></td>
+    </tr>
+    <tr>
+      <th><%= f.label(:price) %></th>
+      <td><%= f.text_field(:price) %></td>
+    </tr>
+    <tr>
+      <th><%= f.label(:published_date) %></th>
+      <td><%= f.date_select :published_date, start_year: 2000, end_year: 2025 %></td>
+    </tr>
+</table>
+
+
