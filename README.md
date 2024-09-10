@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To setup run the following 
 
-Things you may want to cover:
+* bundle install
 
-* Ruby version
+* rails db:create
 
-* System dependencies
+* rails db:migrate
 
-* Configuration
+* RAILS_ENV=test rails db:seed
 
-* Database creation
+* rails s --binding=0.0.0.0
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* editing for dev...
